@@ -2,7 +2,7 @@
 import glob
 
 def read_poscar(file_path):
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding="utf-8") as file:
         lines = file.readlines()
 
     title = lines[0].strip()
